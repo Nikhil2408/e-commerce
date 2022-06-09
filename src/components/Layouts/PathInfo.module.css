@@ -1,0 +1,24 @@
+.pathInfoSection {
+  background-color: #eaded7;
+  height: 100px;
+  padding: 30px 0;
+}
+
+.pathInfoSection h1 {
+  font-size: 2rem;
+  /* text-transform: capitalize; */
+}
+
+.pathInfoSection a {
+  color: #795744;
+  text-decoration: none;
+}
+
+.pathInfoSection a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.pathText {
+  text-transform: capitalize;
+}
