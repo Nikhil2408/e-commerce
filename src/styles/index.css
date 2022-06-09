@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Water+Brush&display=swap');
+
+:root{
+    --color-primary-1: #795744;
+    --color-primary-2: #eaded7;
+}
+
 *{
     margin: 0px;
     padding: 0px;
@@ -16,4 +23,14 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.wrapper-container{
+    width: 100%;
+}
+
+.wrapper{
+    width: 80%;
+    margin: 0rem auto;
+    max-width: 1200px;
 }
