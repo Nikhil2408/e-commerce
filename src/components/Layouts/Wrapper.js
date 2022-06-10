@@ -1,13 +1,14 @@
-import React from "react";
+import React from 'react';
 
-function Wrapper(props){
-    return (
-        <div class="wrapper-container">
-            <div class="wrapper">
-                {props.children}
-            </div>
-        </div> 
-    );
+function Wrapper(props) {
+  const style = {
+    backgroundColor: props.bgColor,
+  };
+  return (
+    <div className='wrapper-container' style={style}>
+      <div className='wrapper'>{props.children}</div>
+    </div>
+  );
 }
 
 export default Wrapper;
