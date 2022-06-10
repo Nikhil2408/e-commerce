@@ -7,7 +7,7 @@ export const PathInfo = () => {
   const location = useLocation();
   return (
     <React.Fragment>
-      <Wrapper>
+      <Wrapper bgColor='#eaded7'>
         <section className={style.pathInfoSection}>
           <h1>
             <Link to='/'>Home</Link> / &nbsp;
