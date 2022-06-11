@@ -1,0 +1,14 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  background-color: #222;
+  color: #fff;
+  position: relative;
+  letter-spacing: 1.5px;
+}
+
+.textPrimary {
+  color: #ab7a5f;
+}
