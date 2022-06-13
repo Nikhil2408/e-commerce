@@ -1,8 +1,11 @@
+.FeaturesContainer{
+    padding-bottom: 1.5rem;
+}
+
 .FeaturesHeader{
     padding: 5rem 0rem 3rem 0rem;
     display: flex;
     justify-content: space-between;
-    border: 2px solid black;
 }
 
 .FeaturesHeader > h2{
@@ -15,6 +18,7 @@
 
 .Features{
     display: flex;
+    justify-content: space-between;
 }
 
 .FeatureCard{
@@ -22,4 +26,32 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0rem 1.5rem;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.logoContainer{
+    background-color: var(--clr-primary-10);
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.logoContainer > i{
+    color: var(--clr-primary-1);
+}
+
+.FeatureCard > h3{
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+}
+
+.FeatureCard > p{
+    font-size: 1.05rem;
 }
