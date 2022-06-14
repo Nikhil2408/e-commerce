@@ -3,6 +3,7 @@ import Wrapper from '../components/Layouts/Wrapper';
 import { AboutSection } from '../components/About/AboutSection';
 import Navigation from '../components/Layouts/Navigation';
 import { PathInfo } from '../components/Layouts/PathInfo';
+import { Footer } from '../components/Layouts/Footer';
 
 function About() {
   return (
@@ -12,6 +13,7 @@ function About() {
       <Wrapper>
         <AboutSection />
       </Wrapper>
+      <Footer />
     </React.Fragment>
   );
 }

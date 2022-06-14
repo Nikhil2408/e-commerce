@@ -1,41 +1,41 @@
-.NewsLetter{
-    padding: 5rem 0rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.NewsLetter {
+  padding: 15rem 0rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.columnLeft{
-    width: 50%;
-    margin: 0rem 1rem;
+.columnLeft {
+  width: 50%;
+  margin: 0rem 1rem;
 }
 
-.columnLeft > h2{
-    margin: 1rem 0rem;
+.columnLeft > h2 {
+  margin: 1rem 0rem;
 }
 
-.columnRight{
-    width: 40%;
-    margin: 0rem 1rem;
+.columnRight {
+  width: 40%;
+  margin: 0rem 1rem;
 }
 
-form{
-    display: flex;
+form {
+  display: flex;
 }
 
-.columnRight > form > input{
-    width: 100%;
-    padding-left: 0.5rem;
-    outline: none;
-    margin-right: 0.5rem;
+.columnRight > form > input {
+  width: 100%;
+  padding-left: 0.5rem;
+  outline: none;
+  margin-right: 0.5rem;
 }
 
-.columnRight > form > button{
-    padding: 0.5rem 1rem;
-    background-color: var(--clr-primary-4);
-    color: white;
-    display: inline-block;
-    border-radius: 10px;
-    border: none;
-    cursor: pointer;
+.columnRight > form > button {
+  padding: 0.5rem 1rem;
+  background-color: var(--clr-primary-4);
+  color: white;
+  display: inline-block;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
 }
