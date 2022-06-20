@@ -1,0 +1,124 @@
+.formGroup {
+  display: flex;
+  flex-direction: column;
+
+  li {
+    list-style: none;
+    line-height: 2;
+  }
+}
+
+.colorSelector {
+  li {
+    display: inline-block;
+    margin: 0 3px;
+    &:first-child {
+      margin-right: 5px;
+      input[type='radio'] {
+        display: none;
+        &:checked + label {
+          cursor: pointer;
+          border-bottom: 1px solid black;
+        }
+      }
+      label {
+        display: inline-block;
+        width: 15.9px;
+        height: 29px;
+      }
+    }
+  }
+
+  $colors: (
+    red: #db2828,
+    orange: #f2711c,
+    yellow: #fbbd08,
+    olive: #b5cc18,
+    green: #21ba45,
+    teal: #00b5ad,
+    blue: #2185d0,
+    violet: #6435c9,
+    purple: #a333c8,
+    pink: #e03997,
+    grey: #777,
+  );
+
+  input[type='radio'] {
+    display: none;
+    &:checked + label {
+      span {
+        transform: scale(1.25);
+      }
+      @each $name, $value in $colors {
+        .#{$name} {
+          border: 2px solid darken($value, 25%);
+        }
+      } // !@each
+    } // !&:checked + label
+  }
+
+  label {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin-right: 5px;
+    cursor: pointer;
+    &:hover {
+      span {
+        transform: scale(1.25);
+      }
+    }
+    span {
+      display: block;
+      width: 100%;
+      height: 100%;
+      transition: transform 0.2s ease-in-out;
+      @each $name, $value in $colors {
+        &.#{$name} {
+          background: $value;
+        }
+      }
+    }
+  }
+}
+
+.formControl {
+  margin: 0.5rem 0;
+
+  h3 {
+    margin-bottom: 10px;
+  }
+}
+
+.currencySpan {
+  display: block;
+  margin: 12px 0;
+}
+.btn {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  &.btnRed {
+    color: white;
+    background-color: brown;
+  }
+}
+
+.radioSelectorList {
+  input[type='radio'] {
+    display: none;
+    &:checked + label {
+      border-bottom: 1px solid black;
+    }
+  }
+  label {
+    cursor: pointer;
+  }
+}
+
+.textBox {
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: #eee;
+}

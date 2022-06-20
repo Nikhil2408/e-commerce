@@ -1,0 +1,14 @@
+.productsSection {
+  display: flex;
+  margin: 3rem 0;
+}
+
+.productsSection aside {
+  width: 30%;
+}
+
+.productsSection > div {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
